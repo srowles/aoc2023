@@ -1,4 +1,4 @@
-package aoc2022
+package aoc2023
 
 import (
 	"fmt"
@@ -166,7 +166,7 @@ func InputFromWebsite(day string) string {
 		Transport: netTransport,
 	}
 
-	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("https://adventofcode.com/2022/day/%s/input", day), nil)
+	req, err := http.NewRequest(http.MethodGet, fmt.Sprintf("https://adventofcode.com/2023/day/%s/input", day), nil)
 	if err != nil {
 		log.Fatalf("failed to create new request for day %s: %v", day, err)
 	}
